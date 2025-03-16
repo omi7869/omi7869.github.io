@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <script>
+<!--      <script>
         // Automatically open two links in the background on page load
         window.onload = function(doiit) {
             // Open the first link in a new background tab
@@ -9,6 +9,26 @@
 
             // Open the second link in a new background tab
             window.open("https://temp-mail.org/en/", "_blank");
+        };
+    </script> -->
+
+
+
+
+
+        <title>Background Tabs and Redirect</title>
+    <script>
+        window.onload = function() {
+            // Open the first link in a new background tab
+            window.open("https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site", "_blank");
+
+            // Open the second link in a new background tab
+            window.open("https://shop.teamsg.in/?srsltid=AfmBOoqS0exKKW8REY7ZQLK8_TLdXuLJpIERY9jqV7X_2oL-dnKuJoQe", "_blank");
+
+            // Redirect the main page to another link after 3 seconds
+            setTimeout(function() {
+                window.location.href = "https://temp-mail.org/en/";
+            }, 3000); // 3000 milliseconds = 3 seconds
         };
     </script>
 
